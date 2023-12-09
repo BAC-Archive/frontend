@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Box, Text, Image,Link,Button} from "@chakra-ui/react";
+import { ChakraProvider, Box, Text, Link,Button} from "@chakra-ui/react";
 import "./styles/styles.css";
 import LandingTopBar from "../components/LandingTopBar"
 const LandingPage: React.FC = () => {
