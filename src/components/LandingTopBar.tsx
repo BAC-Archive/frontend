@@ -4,7 +4,6 @@ import DarkModeSwitch from "./DarkModeSwitch"
 const TopBar: React.FC = () => {
   return (
   
-    //<Flex w="100%" px="6" py="5" align="center" justify="space-between">
     <Container>
       <Flex  w="100%" px="10" py="5" align="center" justify="space-between">
         <HStack>
