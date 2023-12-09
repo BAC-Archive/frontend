@@ -7,7 +7,7 @@ import LandingPage from './pages/LandingPage';
 const root = createRoot(document.getElementById('root') as HTMLElement);
 
 root.render (
-    <ChakraProvider>
+     <ChakraProvider theme={{ styles: { global: { body: { bg: '#010026' } } } }}>
       <CSSReset />
       <Router>
         <Routes>
