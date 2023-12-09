@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Flex, Box, Link, Text, Center,HStack, Button, Spacer, Container} from "@chakra-ui/react";
+import {  Flex, Box, Link, Text, HStack, Button,  Container} from "@chakra-ui/react";
 
 const TopBar: React.FC = () => {
   return (
