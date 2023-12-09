@@ -1,44 +1,39 @@
 import React from "react";
-import {  Flex, Box, Link, Text, HStack, Button,  Container, Spacer} from "@chakra-ui/react";
-import DarkModeSwitch from "./DarkModeSwitch"
-const TopBar: React.FC = () => {
+import { Flex, Box, Link, Text, HStack, Button, Container, Spacer } from "@chakra-ui/react";
+import DarkModeSwitch from "./DarkModeSwitch";
+
+const LandingTopBar: React.FC = () => {
   return (
-  
     <Container>
-      <Flex  w="100%" px="10" py="5" align="center" justify="space-between">
-        <HStack>
-          <Box padding='4' >
-            <Link >
-              <Text as='b'>Home</Text>
+      <Flex direction={{ base: "column", md: "row" }} w="100%" px={{ base: "4", md: "10" }} py="5" align="center" justify="space-between">
+        <HStack spacing={{ base: "0", md: "4" }} mb={{ base: "4", md: "0" }}>
+          <Box padding={{ base: "2", md: "4" }}>
+            <Link>
+              <Text as="b">Home</Text>
             </Link>
           </Box>
-          <Box padding='4'>
+          <Box padding={{ base: "2", md: "4" }}>
             <Link>
-              <Text as='b'>AboutUs</Text>
+              <Text as="b">AboutUs</Text>
             </Link>
           </Box>
-          <Box padding='4'>
+          <Box padding={{ base: "2", md: "4" }}>
             <Link>
-              <Text as='b'>RoadMap</Text>
+              <Text as="b">RoadMap</Text>
             </Link>
           </Box>
         </HStack>
 
         <HStack>
-        <Button as={Link} href='https://github.com/BAC-Archive'>
-          <Text>Contribute</Text>
-        </Button>
-        <Box padding='4'>
+          <Button as={Link} href="https://github.com/BAC-Archive">
+            <Text>Contribute</Text>
+          </Button>
           <Spacer />
-        </Box>
-        <DarkModeSwitch />
-      </HStack>
-
+          <DarkModeSwitch />
+        </HStack>
       </Flex>
-    </Container> 
-        
-        );
+    </Container>
+  );
 };
 
-export default TopBar;
-
+export default LandingTopBar;
