@@ -1,7 +1,7 @@
 import { useColorMode, Switch, SwitchProps, Box } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-const DarkModeSwitch = (props: SwitchProps) => {
+const DarkModeSwitch = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
