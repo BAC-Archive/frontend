@@ -1,10 +1,9 @@
 import React from "react";
-import {  Flex, Box, Link, Text, HStack, Button,  Container} from "@chakra-ui/react";
-
+import {  Flex, Box, Link, Text, HStack, Button,  Container, Spacer} from "@chakra-ui/react";
+import DarkModeSwitch from "./DarkModeSwitch"
 const TopBar: React.FC = () => {
   return (
   
-    //<Flex w="100%" px="6" py="5" align="center" justify="space-between">
     <Container>
       <Flex  w="100%" px="10" py="5" align="center" justify="space-between">
         <HStack>
@@ -24,12 +23,19 @@ const TopBar: React.FC = () => {
             </Link>
           </Box>
         </HStack>
+
+        <HStack>
         <Button as={Link} href='https://github.com/BAC-Archive'>
           <Text>Contribute</Text>
         </Button>
+        <Box padding='4'>
+          <Spacer />
+        </Box>
+        <DarkModeSwitch />
+      </HStack>
 
-        </Flex>
-       </Container> 
+      </Flex>
+    </Container> 
         
         );
 };
