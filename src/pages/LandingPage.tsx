@@ -1,11 +1,13 @@
 import React from "react";
-import { ChakraProvider, Box, Text, Link, Button, Flex } from "@chakra-ui/react";
+import { ChakraProvider, Box, Text, Link, Button, Flex, Spacer } from "@chakra-ui/react";
 import LandingTopBar from "../components/LandingTopBar";
 
 const LandingPage: React.FC = () => {
   return (
     <ChakraProvider>
       <LandingTopBar />
+
+      <Spacer mt={{ base: 4, md: 8, lg: 12 }} />
 
       <Flex
         direction="column"
