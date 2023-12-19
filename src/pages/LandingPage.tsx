@@ -19,7 +19,7 @@ const LandingPage: React.FC = () => {
           width={{ base: "90%", md: "75%", lg: "50%" }}
           p={{ base: 4, md: 8 }}
           my={{ base: 8, md: 16 }}
-          textAlign="center"
+          textAlign="left"
         >
           <Text
             fontFamily="Poppins"
@@ -35,8 +35,8 @@ const LandingPage: React.FC = () => {
         <Box
           width={{ base: "90%", md: "75%", lg: "50%" }}
           p={{ base: 4, md: 8 }}
-          my={{ base: 8, md: 16 }}
-          textAlign="center"
+          my={{ base: 4, md: 8 }}
+          textAlign="left"
         >
           <Text
             fontFamily="Poppins"
