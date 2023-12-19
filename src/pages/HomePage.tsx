@@ -1,35 +1,48 @@
 import React from "react";
-import { SimpleGrid, Card, CardHeader, CardBody, Heading, Text, Box, } from "@chakra-ui/react";
+import { SimpleGrid, Card, CardHeader, CardBody, Heading, Center, Button } from "@chakra-ui/react";
 
 const HomePage: React.FC = () => {
   return (
-    <Box top="50%">
-      <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
-        <Card>
+    <Center h="100vh">
+      <SimpleGrid columns={1} spacing={4}>
+        <Card mb={4}>
           <CardHeader>
-            <Heading size='md'>1ère Bac</Heading>
-          </CardHeader >
+            <Heading size="md">1ère Bac</Heading>
+          </CardHeader>
           <CardBody>
-            <Text>Science Mathématiques</Text>
-            <Text>Science Expérimentale</Text>
+            <Center>
+              <Button variant="outline" colorScheme="blue" mb={2}>
+                Science Mathématiques
+              </Button>
+            </Center>
+            <Center>
+              <Button variant="outline" colorScheme="green">
+                Science Expérimentale
+              </Button>
+            </Center>
           </CardBody>
-        </Card >
+        </Card>
 
-        <Card>
+        <Card mb={4}>
           <CardHeader>
-            <Heading size='md'>2ème Bac</Heading>
-          </CardHeader >
+            <Heading size="md">2ème Bac</Heading>
+          </CardHeader>
           <CardBody>
-            <Text>Science Mathématiques</Text>
-            <Text>Science Expérimentale</Text>
+            <Center>
+              <Button variant="outline" colorScheme="blue" mb={2}>
+                Science Mathématiques
+              </Button>
+            </Center>
+            <Center>
+              <Button variant="outline" colorScheme="green">
+                Science Expérimentale
+              </Button>
+            </Center>
           </CardBody>
-        </Card >
-
-      </SimpleGrid >
-    </Box >
+        </Card>
+      </SimpleGrid>
+    </Center>
   );
-
 }
 
 export default HomePage;
-
