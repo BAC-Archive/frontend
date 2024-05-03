@@ -1,4 +1,4 @@
-import { useColorMode, Switch, Box, Flex } from '@chakra-ui/react';
+import { useColorMode, Switch, Box, Flex, Center, Divider } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 const DarkModeSwitch = () => {
@@ -9,6 +9,9 @@ const DarkModeSwitch = () => {
       <Box mr={2}>
         {colorMode === 'dark' ? <MoonIcon boxSize={6} /> : <SunIcon boxSize={6} />}
       </Box>
+      <Center>
+        <Divider orientation ='vertical'/>
+      </Center>
       <Switch
         isChecked={colorMode === 'dark'}
         onChange={toggleColorMode}

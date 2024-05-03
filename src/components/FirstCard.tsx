@@ -8,7 +8,9 @@ import {
 } from "@chakra-ui/react";
 
 
+const MappingData = () => {
 
+}
 
 
 const FirstCard: React.FC = () => {
@@ -17,7 +19,7 @@ const FirstCard: React.FC = () => {
 
     <Card>
       <CardHeader>
-        <Heading size="md">1ère Bac</Heading>
+        <Heading size="md">1ère Bac :</Heading>
       </CardHeader>
       <CardBody>
         <Button

@@ -17,7 +17,7 @@ const SecondCard: React.FC = () => {
 
     <Card>
       <CardHeader>
-        <Heading size="md">2ème Bac</Heading>
+        <Heading size="md">2ème Bac :</Heading>
       </CardHeader>
       <CardBody>
         <Button
