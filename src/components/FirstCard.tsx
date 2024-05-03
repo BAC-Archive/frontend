@@ -8,9 +8,6 @@ import {
 } from "@chakra-ui/react";
 
 
-const MappingData = () => {
-
-}
 
 
 const FirstCard: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, ChakraProvider, SimpleGrid, Heading, Button, Text, Center} from '@chakra-ui/react';
+import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Heading, Button, Text, Center} from '@chakra-ui/react';
 const Dashboard: React.FC = () => {
   return (
   <Center>
